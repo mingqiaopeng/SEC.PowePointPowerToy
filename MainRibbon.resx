@@ -178,4 +178,20 @@
         YII=
 </value>
   </data>
+  <data name="AddProgressButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAACP0lEQVR4Xu2aS0oDQRCGc4Qc
+        wRM5Ior4JCAogrjSjSj4xEdUzAXcuXEruhAlRmM05ol6n3aE2jj8BenpGmuQ+uBbd30dSA89UzAMwzAM
+        wzAMwzBivr76xdhqrMurzeaLq9Xufa3GFimTJ14g1/H9fhvFDWqVMnnQonmy0aihMB+HKBWDFs2L3e47
+        CvKSMnnQwnnx+bkKo3ykTB60cB5stRowyFfK5EGLa/v52XNPTw8wyFfK5EEDaPv2VocxaaRMHjSApr1e
+        C4aklTJ50BCaChx7v6RMHjSElp1OE0aESJk8aBANf/74JI69pJTJg4bRUOrYS0qZPMlBrurnbus6CnLn
+        NnKn7WF31h3Mw8cRVyrNBVupnIZvAAry9aiOQzlXdiZhUBrVN2DvLoKRnLvXozAkreobUH7FoZxLa9Mw
+        JK2qG7D/4Pfrb16OwYgQ1TZg+yZyJy0ciiy/Rm5+cRZGhKi2AQc1v19/9XwCBoSqsgE/xx6K5JQ69pAq
+        G3DcwKGcyxtTcHgJ/3wDtI+9pH++AeUmDuVcWJmBg0sZvAE+j8K+x976xTgcWkqRR+GslLzm8pEyedCw
+        WSh5zeUjZfKgYaUNfLsTJGXyoIGllb7m8pEyedDAkkq83QmRMnnQ0JJmcc3lI2XyoKGlzOqay0fK5EGD
+        S/jx0VU59pJSJg8aXkKtYy8pZfKg4UOVfrsTImXyoIBQNY+9pJTJEw8s+olMFm93AhzoExmxj6S0nvcZ
+        B/tIyjAMwzAMwzAM4/9TKHwDJlm273Ge1LQAAAAASUVORK5CYII=
+</value>
+  </data>
 </root>

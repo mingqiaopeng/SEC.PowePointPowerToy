@@ -38,6 +38,7 @@
             this.SECTab = this.Factory.CreateRibbonTab();
             this.GroupA = this.Factory.CreateRibbonGroup();
             this.SetTimeLIMITButton = this.Factory.CreateRibbonButton();
+            this.AddProgressButton = this.Factory.CreateRibbonButton();
             this.SECTab.SuspendLayout();
             this.GroupA.SuspendLayout();
             this.SuspendLayout();
@@ -51,6 +52,7 @@
             // GroupA
             // 
             this.GroupA.Items.Add(this.SetTimeLIMITButton);
+            this.GroupA.Items.Add(this.AddProgressButton);
             this.GroupA.Label = "功能";
             this.GroupA.Name = "GroupA";
             // 
@@ -62,6 +64,15 @@
             this.SetTimeLIMITButton.Name = "SetTimeLIMITButton";
             this.SetTimeLIMITButton.ShowImage = true;
             this.SetTimeLIMITButton.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.SetTimeLIMITButton_Click);
+            // 
+            // AddProgressButton
+            // 
+            this.AddProgressButton.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge;
+            this.AddProgressButton.Image = ((System.Drawing.Image)(resources.GetObject("AddProgressButton.Image")));
+            this.AddProgressButton.Label = "添加进度条";
+            this.AddProgressButton.Name = "AddProgressButton";
+            this.AddProgressButton.ShowImage = true;
+            this.AddProgressButton.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.AddProgressButton_Click);
             // 
             // MainRibbon
             // 
@@ -82,6 +93,7 @@
         internal Microsoft.Office.Tools.Ribbon.RibbonTab SECTab;
         internal Microsoft.Office.Tools.Ribbon.RibbonGroup GroupA;
         internal Microsoft.Office.Tools.Ribbon.RibbonButton SetTimeLIMITButton;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton AddProgressButton;
     }
 
     partial class ThisRibbonCollection
