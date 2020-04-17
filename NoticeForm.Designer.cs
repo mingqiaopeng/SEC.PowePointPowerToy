@@ -35,6 +35,7 @@
             // 
             this.NoticLabel.AutoSize = true;
             this.NoticLabel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.NoticLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.NoticLabel.Font = new System.Drawing.Font("华康俪金黑W8(P)", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.NoticLabel.ForeColor = System.Drawing.Color.Maroon;
             this.NoticLabel.Location = new System.Drawing.Point(30, 0);
@@ -48,6 +49,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(434, 61);
             this.Controls.Add(this.NoticLabel);
             this.DoubleBuffered = true;

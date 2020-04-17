@@ -27,6 +27,9 @@ namespace SEC.PowerPointPowerToy
         const int WS_EX_TRANSPARENT = 0x20;
         const int WS_EX_LAYERED = 0x80000;
         const int LWA_ALPHA = 2;
+        const int LWA_COLORKEY = 1;
+
+
 
         public NoticeForm()
         {
@@ -35,7 +38,9 @@ namespace SEC.PowerPointPowerToy
 
         public void SetOpacity(byte opacity)
         {
-            SetLayeredWindowAttributes(this.Handle, 80, opacity, LWA_ALPHA);
+            //
+            //SetLayeredWindowAttributes(this.Handle, 80, opacity, LWA_ALPHA);
+            SetLayeredWindowAttributes(this.Handle, Color.White.ToArgb(), opacity, LWA_ALPHA | LWA_COLORKEY);
         }
 
         private void NoticeForm_Load(object sender, EventArgs e)
@@ -53,10 +58,10 @@ namespace SEC.PowerPointPowerToy
             this.WindowState = FormWindowState.Normal;
             this.Top = 0;
             this.Left = Screen.PrimaryScreen.Bounds.Width - 450;
-            //this.BackColor = Color.White;
+            this.BackColor = Color.White;
             // 设置Windows属性
             SetWindowLong(this.Handle, GWL_EXSTYLE, GetWindowLong(this.Handle, GWL_EXSTYLE) | WS_EX_TRANSPARENT | WS_EX_LAYERED);
-            SetLayeredWindowAttributes(this.Handle, 80, 0, LWA_ALPHA);
+            SetLayeredWindowAttributes(this.Handle, Color.White.ToArgb(), 0, LWA_ALPHA | LWA_COLORKEY);
 
             
             //this.BackColor = Color.Black;

@@ -39,6 +39,10 @@
             this.GroupA = this.Factory.CreateRibbonGroup();
             this.SetTimeLIMITButton = this.Factory.CreateRibbonButton();
             this.AddProgressButton = this.Factory.CreateRibbonButton();
+            this.InsertLogoSplitButton = this.Factory.CreateRibbonSplitButton();
+            this.BigLogoCheckBox = this.Factory.CreateRibbonCheckBox();
+            this.SkipFirstPageCheckBox = this.Factory.CreateRibbonCheckBox();
+            this.TopCheckBox = this.Factory.CreateRibbonCheckBox();
             this.SECTab.SuspendLayout();
             this.GroupA.SuspendLayout();
             this.SuspendLayout();
@@ -53,6 +57,7 @@
             // 
             this.GroupA.Items.Add(this.SetTimeLIMITButton);
             this.GroupA.Items.Add(this.AddProgressButton);
+            this.GroupA.Items.Add(this.InsertLogoSplitButton);
             this.GroupA.Label = "功能";
             this.GroupA.Name = "GroupA";
             // 
@@ -74,6 +79,35 @@
             this.AddProgressButton.ShowImage = true;
             this.AddProgressButton.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.AddProgressButton_Click);
             // 
+            // InsertLogoSplitButton
+            // 
+            this.InsertLogoSplitButton.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge;
+            this.InsertLogoSplitButton.Image = ((System.Drawing.Image)(resources.GetObject("InsertLogoSplitButton.Image")));
+            this.InsertLogoSplitButton.Items.Add(this.BigLogoCheckBox);
+            this.InsertLogoSplitButton.Items.Add(this.SkipFirstPageCheckBox);
+            this.InsertLogoSplitButton.Items.Add(this.TopCheckBox);
+            this.InsertLogoSplitButton.Label = "插入国网标";
+            this.InsertLogoSplitButton.Name = "InsertLogoSplitButton";
+            this.InsertLogoSplitButton.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.InsertLogoSplitButton_Click);
+            // 
+            // BigLogoCheckBox
+            // 
+            this.BigLogoCheckBox.Checked = true;
+            this.BigLogoCheckBox.Label = "使用大图标";
+            this.BigLogoCheckBox.Name = "BigLogoCheckBox";
+            // 
+            // SkipFirstPageCheckBox
+            // 
+            this.SkipFirstPageCheckBox.Checked = true;
+            this.SkipFirstPageCheckBox.Label = "忽略第一页";
+            this.SkipFirstPageCheckBox.Name = "SkipFirstPageCheckBox";
+            // 
+            // TopCheckBox
+            // 
+            this.TopCheckBox.Checked = true;
+            this.TopCheckBox.Label = "位于上方";
+            this.TopCheckBox.Name = "TopCheckBox";
+            // 
             // MainRibbon
             // 
             this.Name = "MainRibbon";
@@ -94,6 +128,10 @@
         internal Microsoft.Office.Tools.Ribbon.RibbonGroup GroupA;
         internal Microsoft.Office.Tools.Ribbon.RibbonButton SetTimeLIMITButton;
         internal Microsoft.Office.Tools.Ribbon.RibbonButton AddProgressButton;
+        internal Microsoft.Office.Tools.Ribbon.RibbonSplitButton InsertLogoSplitButton;
+        internal Microsoft.Office.Tools.Ribbon.RibbonCheckBox BigLogoCheckBox;
+        internal Microsoft.Office.Tools.Ribbon.RibbonCheckBox SkipFirstPageCheckBox;
+        internal Microsoft.Office.Tools.Ribbon.RibbonCheckBox TopCheckBox;
     }
 
     partial class ThisRibbonCollection
